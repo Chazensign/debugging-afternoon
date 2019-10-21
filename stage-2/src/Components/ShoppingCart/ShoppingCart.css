@@ -1,6 +1,7 @@
 .shopping-cart-container {
   position: relative;
   display: flex;
+  
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: white;
@@ -8,6 +9,7 @@
 
 .shopping-cart-product-container {
   display: flex;
+  flex-direction: column;
   margin: 5vh 0;
   font-family: 'Source Code Pro', monospace;
 }

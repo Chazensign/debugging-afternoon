@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import './StoreFront.css';
 
 class StoreFront extends Component {
-  render() {
-    let productDisplay = this.props.products.map((element, index) => {
+    dispProds = () => {
+      console.log(this.props.products)
+      let productDisplay = this.props.products.map((element, index) => {
       return (
         <div className="product-container" key={index}>
           <h2>{element.title}</h2>
@@ -14,11 +15,17 @@ class StoreFront extends Component {
         </div>
       )
     })
+    return productDisplay
+    }
+    render() {
+      
     return (
       <div className="storefront-container">
+        {this.dispProds()}
       </div>
     )
   }
 }
+
 
 export default StoreFront;
